@@ -17,6 +17,7 @@ require("lazy").setup({
   -- ここにプラグインを追加していきます
   'github/copilot.vim',
   {'catppuccin/nvim', name = 'catppuccin', priority = 1000,},
+  {'nvim-tree/nvim-tree.lua', requires = {'nvim-web-devicons'}},
 })
 
 -- 基本的な設定（例: 行番号の表示）
