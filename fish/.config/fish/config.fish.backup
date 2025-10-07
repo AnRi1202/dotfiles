@@ -1,0 +1,29 @@
+if status is-interactive
+    # PATH 永続追加（順序は必要に応じて調整）
+    fish_add_path -U /opt/homebrew/bin
+    fish_add_path -U "/Applications/KLayout.app/Contents/MacOS"
+    fish_add_path -U ~/.local/bin
+
+    # Caravel / OpenLane
+    fish_add_path -U "/Applications/KLayout/klayout.app/Contents/MacOS"
+    fish_add_path -U ~/.local/bin   
+    set -gx TARGET_PATH /Users/rikutoide/Documents/dev/caravel_user_project
+    set -gx install_dir /Users/rikutoide/Documents/dev
+    set -gx caravel_dir_name caravel_user_project
+    set -gx PDK_ROOT       $install_dir/pdk
+    set -gx OPENLANE_ROOT  $install_dir/openlane
+    set -gx PDK            sky130A
+    set -gx MGMT_AREA_ROOT $install_dir/$caravel_dir_name/mgmt_core_wrapper
+    set -gx DESIGNS        $install_dir/$caravel_dir_name
+    set -gx CARAVEL_ROOT   $DESIGNS/caravel
+    set -gx CORE_VERILOG_PATH $MGMT_AREA_ROOT/verilog
+
+    # （必要なら）oss-cad-suite
+    fish_add_path -U $HOME/oss-cad-suite/bin
+    fish_add_path -U $install_dir/oss-cad-suite/bin
+    fish_add_path -U $install_dir/openlane_summary
+end
+
+
+# direnv を使うなら最後に
+direnv hook fish | source

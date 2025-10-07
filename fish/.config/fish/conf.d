@@ -1,0 +1,1 @@
+/Users/rikutoide/dotfiles/fish/conf.d
