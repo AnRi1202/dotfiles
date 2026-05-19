@@ -1,0 +1,9 @@
+[submodule "themes/themes/WhiteSur-gtk-theme"]
+	path = themes/themes/WhiteSur-gtk-theme
+	url = https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+[submodule "themes/themes/WhiteSur-icon-theme"]
+	path = themes/themes/WhiteSur-icon-theme
+	url = https://github.com/vinceliuice/WhiteSur-icon-theme.git
+[submodule "themes/themes/WhiteSur-cursors"]
+	path = themes/themes/WhiteSur-cursors
+	url = https://github.com/vinceliuice/WhiteSur-cursors.git
